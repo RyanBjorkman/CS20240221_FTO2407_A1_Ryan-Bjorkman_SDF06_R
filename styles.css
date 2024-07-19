@@ -79,5 +79,11 @@ text-align: center;
 .gallery-item-info ul {
     list-style-type: none;
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
+
+.gallery-item-info .visually-hidden {
+    display: none;
+}
+
+
