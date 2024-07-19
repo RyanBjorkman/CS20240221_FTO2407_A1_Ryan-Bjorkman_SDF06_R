@@ -22,8 +22,13 @@ img {
     display: block;
 }
 
-.container {
+.profile {
  display: flex;
  justify-content: center;
- align-items: baseline;
+ align-items:center
+}
+
+.profile-stats{
+    display: flex;
+    justify-content: center;
 }
