@@ -18,9 +18,6 @@ body {
     padding-bottom: 3rem;
 }
 
-img {
-    display: block;
-}
 
 .profile {
  display:flex;
@@ -29,8 +26,20 @@ img {
 }
 
 .profile-image {
-    display: grid;
-    align-items: baseline;
+   border: 8px solid rgb(3, 90, 42);
+   border-radius: 50%;
+   display: inline;
+   width: 400px;
+   height: 400px;
+   position: relative;
+   overflow: hidden;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 .gallery {
     display: grid;
