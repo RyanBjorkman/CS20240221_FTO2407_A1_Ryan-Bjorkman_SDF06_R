@@ -53,3 +53,31 @@ img {
     height:100%;
     object-fit: cover;
 }
+
+.gallery-item-info{
+position:absolute;
+bottom: 0;
+background: rgba(0,0,0,0.5);
+color: #f1f1f1;
+width: 100%;
+height: 100%;
+transition: 0.5s ease;
+opacity: 0;
+color: white;
+font-size: 20px;
+padding: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.gallery-item:hover .gallery-item-info{
+    opacity: 1;
+}
+
+.gallery-item-info ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
