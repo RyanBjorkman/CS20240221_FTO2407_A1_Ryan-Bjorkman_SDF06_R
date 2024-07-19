@@ -23,12 +23,37 @@ img {
 }
 
 .profile {
- display: flex;
- justify-content: center;
- align-items:center
+ display:flex;
+ justify-content:center;
+ align-items: baseline;
 }
 
-.profile-stats{
-    display: flex;
-    justify-content: center;
+.profile-image {
+    display: grid;
+    align-items: baseline;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(3, 6fr);
+    gap: 15px;
+    padding:100px
+}
+
+.gallery-item {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    overflow: hidden;
+}
+
+.gallery-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    unicode-bidi: isolate;
 }
