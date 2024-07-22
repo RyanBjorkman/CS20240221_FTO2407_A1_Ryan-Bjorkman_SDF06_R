@@ -193,6 +193,7 @@ text-align: center;
 /*loader*/
 
 .loader-center {
+    position: absolute;
     display: flex;
     justify-content: center;
 }
@@ -211,4 +212,33 @@ text-align: center;
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+/*media queries*/
+
+@media (max-width: 900px) {
+    .profile-image,
+    .profile-user-settings,
+    .profile-stats,
+    .profile-bio {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin: 0 auto 3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
 }
