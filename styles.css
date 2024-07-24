@@ -207,6 +207,11 @@ text-align: center;
     animation: spin 0.5s linear infinite; 
 }
 
+.loader-container {
+    display: flex;
+    justify-content: center;
+}
+
 /*loader animation*/
 
 @keyframes spin {
