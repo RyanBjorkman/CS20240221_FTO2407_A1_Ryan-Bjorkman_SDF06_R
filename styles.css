@@ -141,7 +141,7 @@ img {
     grid-template-columns: repeat(3, 1fr);
     grid-row: 100px;
     gap: 15px;
-    padding:80px
+    padding:30px
 }
 
 .gallery-item {
